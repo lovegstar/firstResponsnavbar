@@ -23,60 +23,63 @@
         <div></div>
       </div>
     </nav>
-    <h1 class="contact">Contact Us Today</h1>
     <div class="form">
-      <form action="#">
-        <label for="name">Name</label><br />
+      <h1 class="contact">Contact Us Today</h1>
+
+      <form action="#" class="details" id="details">
+        <label for="name">Name</label>
         <input
-          class="name"
           type="text"
-          value=""
-          placeholder="enter name"
-          name="Name"
+          name="firstname"
+          class="first"
           required
-        /><br />
-        <label for="country">Country</label><br />
+          placeholder="First Name"
+        />
+        <input type="text" class="second" placeholder="Last Name" /> <br />
+        <label for="company">Website</label>
+        <input type="text" name="website" class="website" required /> <br />
+        <label for="email">Email</label>
         <input
-          class="name"
-          type="text"
-          value=""
-          placeholder="country"
-          name="Name"
-          required
-        /><br />
-        <label for="phone-number">Number</label><br />
-        <input
-          class="name"
-          type="number"
-          value=""
-          placeholder="phone number"
-          name="Name"
+          type="email"
+          name="email"
+          class="email"
+          placeholder="example@email.com"
           required
         />
         <br />
-        <label for="sex">Male</label>
-        <input type="radio" value="male" name="sex" required /> <br />
-        <label for="sex">female</label>
-        <input type="radio" value="femail" name="sex" required />
-        <p>Select the things you like</p>
-        <br />
-        <label for="food">Food</label>
-        <input type="checkbox" name="food" /> <br />
-        <label for="water">Water</label>
-        <input type="checkbox" name="water" /> <br />
-        <label for="game">Games</label>
-        <input type="checkbox" name="game" /> <br />
-        <label for="message">Message</label> <br />
-        <textarea
-          name="message"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="enter message"
+        <label for="phone">Phone</label>
+        <input
+          type="number"
+          name="phone-number"
+          class="phone"
+          placeholder="code"
           required
-        ></textarea>
+        />
+        <input
+          type="number"
+          name="number"
+          class="number"
+          required
+          placeholder="Phone number"
+        />
         <br />
-        <input type="submit" />
+        <label for="subject">Subject</label>
+        <select name="subject" id="selet" required>
+          <option value="emty">chose option</option>
+          <option value="bad">Bad Work</option>
+          <option value="Good">Good Work</option>
+          <option value="better">Better Work</option>
+          <option value="best"> Best</option>
+        </select>
+        <br />
+        <label for="message">Message</label>
+        <textarea name="message" id="" cols="30" rows="6"></textarea> <br />
+        <p>Do you like your expirence on our website?</p>
+        <input type="radio" name="expirence" required value="yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" name="expirence" required value="No" />
+        <label for="no">No</label> <br />
+        <button>Submit</button>
       </form>
     </div>
     <script src="index.js"></script>
